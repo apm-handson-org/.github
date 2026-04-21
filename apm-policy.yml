@@ -2,4 +2,4 @@ name: "apm-handson-org Policy"
 enforcement: block
 dependencies:
   deny:
-    - "**/evil-*"
+    - "ry0y4n/evil-*"
