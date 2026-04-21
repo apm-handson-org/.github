@@ -1,15 +1,5 @@
-# apm-handson-org policy for the APM Zenn article hands-on.
-# See: https://microsoft.github.io/apm/enterprise/policy-reference/
-name: "apm-handson-org Policy"
-enforcement: block  # block | warn | off
-
+name: "Policy test"
+enforcement: block
 dependencies:
-  # Deny any dependency whose repo name begins with "evil-".
-  # Demonstrates how an org can pre-emptively flag suspicious names.
   deny:
-    - "*/evil-*"
-
-mcp:
-  self_defined: warn
-  transport:
-    allow: [stdio, streamable-http]
+    - "*/evil-*/**"
