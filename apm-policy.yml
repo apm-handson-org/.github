@@ -1,0 +1,18 @@
+# apm-handson-org policy for the APM Zenn article hands-on.
+# See: https://microsoft.github.io/apm/enterprise/policy-reference/
+name: "apm-handson-org Policy"
+enforcement: block  # block | warn | off
+
+dependencies:
+  allow:
+    - "microsoft/**"
+    - "github/**"
+    - "anthropics/**"
+  deny:
+    - "untrusted-org/**"
+    - "*/evil-*"
+
+mcp:
+  self_defined: warn
+  transport:
+    allow: [stdio, streamable-http]
