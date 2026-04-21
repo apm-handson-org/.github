@@ -4,14 +4,9 @@ name: "apm-handson-org Policy"
 enforcement: block  # block | warn | off
 
 dependencies:
-  # Organisations/users whose packages are trusted inside apm-handson-org.
-  allow:
-    - "microsoft/**"
-    - "github/**"
-    - "anthropics/**"
-    - "ry0y4n/**"
-  # Deliberately flag anything whose repo name starts with "evil-".
-  # Used to demonstrate how the policy blocks suspicious dependencies.
+  # Deny any dependency whose repo name begins with "evil-".
+  # Demonstrates how an org can pre-emptively flag suspicious names
+  # without maintaining an exhaustive allow-list.
   deny:
     - "*/evil-*"
 
