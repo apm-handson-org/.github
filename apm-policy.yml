@@ -2,4 +2,4 @@ name: "Policy test"
 enforcement: block
 dependencies:
   deny:
-    - "**/evil-*"
+    - "**/evil-*/**"
